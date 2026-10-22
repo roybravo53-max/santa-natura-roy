@@ -1,5 +1,5 @@
 import { PASOS, WHATSAPP } from "../site.config";
-import { Pendiente, SectionHead, WaButton } from "./ui";
+import { SectionHead, WaButton } from "./ui";
 
 export function Problema() {
   return (
@@ -130,12 +130,12 @@ export function SantaNatura() {
   );
 }
 
-const RECIBE: { t: string; d: string; confirmar?: boolean }[] = [
-  { t: "Código de socio", d: "Tu identificación dentro de Santa Natura.", confirmar: true },
-  { t: "Plataforma", d: "Un espacio para gestionar tus compras y tu actividad.", confirmar: true },
-  { t: "Tienda virtual", d: "Solo si está incluida en la modalidad vigente. No trae clientes por sí sola.", confirmar: true },
-  { t: "Compra con descuento", d: "Pagas menos que el valor público referencial por los productos de tu modalidad." },
-  { t: "Plan comercial y formación", d: "Cómo funciona el plan y cómo aprender a presentarlo.", confirmar: true },
+const RECIBE: { t: string; d: string }[] = [
+  { t: "Código de socio", d: "Tu identificación dentro de Santa Natura. Se activa con tu primera compra de productos." },
+  { t: "Compra con descuento", d: "Pagas menos que el valor público referencial por los productos de tu pack (de 20% a 40%)." },
+  { t: "Tienda virtual", d: "Tu propia tienda, donde se te enseña a hacer pedidos. No trae clientes por sí sola: hay que darla a conocer." },
+  { t: "Recojo en tiendas autorizadas", d: "Eliges el punto de recojo entre las tiendas Sumaq Wasi, en varios distritos del Perú, y coordinas con ellas si hacen envíos." },
+  { t: "Plan comercial y formación", d: "Bonos por metas (Afilia, Liderazgo, Mercadeo y otros) y el acompañamiento para aprender a lograrlos." },
 ];
 
 export function QueRecibe() {
@@ -149,7 +149,7 @@ export function QueRecibe() {
               Empieza con productos. <em>Aprende a construir un negocio.</em>
             </>
           }
-          lead="Esto es lo que se espera de la afiliación. Lo marcado como “por confirmar” se verifica con el plan vigente antes de que decidas."
+          lead="Esto es lo que incluye la afiliación según el plan que maneja Roy. Si algo cambió, te lo confirma antes de que compres."
         />
         <ul className="recibe">
           {RECIBE.map((r) => (
@@ -158,8 +158,7 @@ export function QueRecibe() {
                 <h3>{r.t}</h3>
                 <p>{r.d}</p>
               </div>
-              {r.confirmar && <Pendiente>Por confirmar</Pendiente>}
-            </li>
+                          </li>
           ))}
         </ul>
       </div>
@@ -205,7 +204,7 @@ export function Como() {
             </div>
             <div>
               <dt>Bonificaciones del plan</dt>
-              <dd>Pagos que el plan de compensación oficial podría contemplar. Su existencia y condiciones se confirman con el plan vigente.</dd>
+              <dd>Pagos por cumplir metas del plan (más abajo ves tres de ellos). Dependen de tu rango y de cumplir sus condiciones.</dd>
             </div>
           </dl>
         </div>

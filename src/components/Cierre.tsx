@@ -62,7 +62,10 @@ export function Acompanamiento() {
   return (
     <section id="roy" className="sec sec-cream">
       <div className="wrap split split-roy">
-        <ImagenOMarcador className="roy-foto" src={ROY.foto} alt={ROY.fotoAlt} marcador="FOTO_DE_ROY" />
+        <figure className="roy-fig">
+          <ImagenOMarcador className="roy-foto" src={ROY.foto} alt={ROY.fotoAlt} marcador="FOTO_DE_ROY" />
+          <figcaption>{ROY.fotoPie}</figcaption>
+        </figure>
         <div>
           <SectionHead kicker="Quién te acompaña" title="Soy Roy. Te acompaño a decidir con números claros." />
           <p className="lead">{ROY.perfil}. Mi trabajo es que entiendas las condiciones antes de poner un sol.</p>

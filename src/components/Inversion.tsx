@@ -24,6 +24,10 @@ function Tarjeta({ m }: { m: Modalidad }) {
           <dd>{m.descuento}%</dd>
         </div>
         <div>
+          <dt>Puntos para escoger productos</dt>
+          <dd>{m.puntos} puntos</dd>
+        </div>
+        <div>
           <dt>Diferencia de precio</dt>
           <dd>{soles(diferencia)}</dd>
         </div>
@@ -66,9 +70,10 @@ export function Inversion() {
               al comprar esos productos.
             </li>
             <li>Un mayor descuento exige una mayor inversión. No significa mayor resultado.</li>
-            <li>Los montos y porcentajes son datos que entregó Roy y se confirman con el plan vigente.</li>
+            <li>“Millonario” es el nombre del pack. No describe un resultado ni garantiza ganancias.</li>
+            <li>Montos, puntos y porcentajes provienen del plan que maneja Roy; él te confirma que sigan vigentes al escribirle.</li>
           </ul>
-          <p className="pend-title">Pendiente de confirmar antes de afiliarte:</p>
+          <p className="pend-title">Todavía por confirmar con Roy:</p>
           <ul className="pend-list">
             {PENDIENTES_PUBLICOS.map((p) => (
               <li key={p}>{p}</li>

@@ -181,10 +181,22 @@ em { font-style: italic; color: var(--g2); }
 .nota-inv .btn-verde { background: var(--gold); color: var(--ink); }
 .nota-inv .btn-verde:hover { background: var(--gold-soft); }
 
+/* Bonos */
+.bono { margin-bottom: 36px; }
+.bono h3 { font-size: 1.5rem; color: var(--g1); margin-bottom: 8px; }
+.bono > p { color: var(--muted); max-width: 44em; }
+.tabla-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r); }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { padding: 12px 10px; white-space: nowrap; text-align: center; border-bottom: 1px solid var(--line); }
+thead th { background: var(--g1); color: var(--paper); font-weight: 600; white-space: nowrap; }
+tbody th { text-align: left; font-weight: 700; background: var(--cream); }
+tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+td { font-weight: 600; }
+
 /* Productos */
 .productos { display: grid; gap: 18px; }
 .producto { border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; background: var(--paper); display: grid; }
-.producto-img { aspect-ratio: 4 / 3; width: 100%; object-fit: cover; }
+.producto-img { aspect-ratio: 1 / 1; width: 100%; object-fit: cover; }
 .img-marcador { background: repeating-linear-gradient(45deg, #efe9d6, #efe9d6 12px, #e8e1c9 12px, #e8e1c9 24px); display: grid; place-items: center; text-align: center; padding: 16px; color: #5b4500; font: 700 13px var(--font-body); border: 2px dashed var(--gold); }
 .producto-body { padding: 18px 18px 22px; }
 .producto-tipo { font-size: 13px; color: var(--g2); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; margin: 0 0 6px; }
@@ -198,7 +210,9 @@ em { font-style: italic; color: var(--g2); }
 
 /* Roy */
 .split-roy { align-items: center; }
-.roy-foto { width: 100%; max-width: 360px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--r); }
+.roy-fig { margin: 0; }
+.roy-fig figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; }
+.roy-foto { width: 100%; max-width: 360px; aspect-ratio: 3 / 4; object-fit: cover; object-position: center top; border-radius: var(--r); }
 .check-list { list-style: none; padding: 0; margin: 18px 0; display: grid; gap: 12px; }
 .check-list li { position: relative; padding-left: 32px; }
 .check-list li::before { content: ""; position: absolute; left: 0; top: .2em; width: 20px; height: 20px; border-radius: 50%; background: var(--g1); }

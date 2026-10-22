@@ -27,6 +27,7 @@ export function Header() {
       </a>
       <nav aria-label="Principal" className="nav-desktop">
         <a href="#modalidades">Modalidades</a>
+        <a href="#bonos">Bonos</a>
         <a href="#como">Cómo funciona</a>
         <a href="#preguntas">Preguntas</a>
       </nav>
