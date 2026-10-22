@@ -68,7 +68,7 @@ export const MODALIDADES: Modalidad[] = [
     descuento: 20,
     puntos: 50,
     paraQuien:
-      "quieres conocer los productos y cómo funciona la afiliación con el menor monto de entrada de la tabla.",
+      "quieres conocer los productos y cómo funciona la afiliación con el menor monto de entrada.",
     etiqueta: "Menor monto de entrada",
   },
   {
@@ -89,7 +89,7 @@ export const MODALIDADES: Modalidad[] = [
     descuento: 30,
     puntos: 250,
     paraQuien:
-      "ya conversaste con Roy, entiendes el plan y tienes claro cómo usarías y presentarías esa cantidad de productos.",
+      "ya conversamos, entiendes el plan y tienes claro cómo usarías y presentarías esa cantidad de productos.",
   },
   {
     id: "millonario",
@@ -99,7 +99,7 @@ export const MODALIDADES: Modalidad[] = [
     descuento: 40,
     puntos: 450,
     paraQuien:
-      "puedes asumir un monto alto en productos y ya revisaste con Roy las condiciones. El nombre es el del pack, no un resultado.",
+      "puedes asumir un monto alto en productos y ya revisamos juntos las condiciones.",
     etiqueta: "Mayor descuento",
   },
 ];
@@ -151,7 +151,7 @@ export const CATALOGO_URL = "https://santanatura.com.pe/shop/";
 
 /** Texto que la propia ficha oficial incluye. Se muestra tal cual en la sección de productos. */
 export const AVISO_PRODUCTOS =
-  "Según el sitio oficial, estos productos se presentan como superalimentos, no como medicina, y las propiedades mencionadas son tradicionales. No sustituyen tratamiento médico. Ante molestias o dudas de salud, consulta a un profesional.";
+  "Santa Natura presenta estos productos como superalimentos, no como medicina, y las propiedades mencionadas son tradicionales. No sustituyen un tratamiento médico: ante molestias o dudas de salud, consulta a un profesional.";
 
 export const PASOS = [
   { titulo: "Conoce los productos y las condiciones", texto: "Revisas qué ofrece Santa Natura y qué condiciones tiene la afiliación vigente, antes de poner un sol." },
@@ -159,7 +159,7 @@ export const PASOS = [
   { titulo: "Aprende a presentar con responsabilidad", texto: "Hablar de un producto es contar lo que dice la ficha oficial, sin exagerar ni prometer resultados de salud." },
   { titulo: "Conversa con personas", texto: "Empiezas por tu círculo cercano, con respeto y sin presión. Se trata de conversar, no de insistir." },
   { titulo: "Haz seguimiento", texto: "Una conversación rara vez termina en una sola respuesta. Llevas un orden simple de a quién escribiste y cuándo." },
-  { titulo: "Atiende clientes y, si el plan lo permite, suma socios", texto: "La parte de formar equipo depende de lo que permita el plan vigente. Se confirma antes de afiliarte." },
+  { titulo: "Atiende clientes y suma socios", texto: "Cuando alguien más quiere empezar, lo acompañas a afiliarse. Es opcional: tú decides hasta dónde llegar." },
   { titulo: "Acompaña a tu equipo", texto: "Si llegas a tener personas contigo, tu trabajo pasa a ser orientarlas y no dejarlas solas." },
   { titulo: "Mide ventas, gastos y resultados", texto: "Anotas cuánto compraste, cuánto vendiste y cuánto gastaste. Sin números no hay negocio, solo ilusión." },
 ];
@@ -171,7 +171,7 @@ export const FAQ: { p: string; r: string }[] = [
   },
   {
     p: "¿Hay que pagar una inscripción o membresía?",
-    r: "Según la información de Roy, el código de socio se activa con tu primera compra de productos (el pack que elijas). No se presenta ninguna inscripción ni kit aparte. Cualquier cambio en las condiciones vigentes te lo confirma Roy antes de que compres.",
+    r: "Según el plan vigente, el código de socio se activa con tu primera compra de productos (el pack que elijas). No se presenta ninguna inscripción ni kit aparte. Si algo cambia en las condiciones, te aviso antes de que compres.",
   },
   {
     p: "¿Es obligatorio comprar un kit?",
@@ -179,7 +179,7 @@ export const FAQ: { p: string; r: string }[] = [
   },
   {
     p: "¿Qué productos recibo?",
-    r: "Eliges productos del catálogo de Santa Natura con los puntos de tu pack: 50, 100, 250 o 450 puntos según la modalidad. Roy te orienta en cuáles escoger.",
+    r: "Eliges productos del catálogo de Santa Natura con los puntos de tu pack: 50, 100, 250 o 450 puntos según la modalidad. Te oriento para que escojas bien.",
   },
   {
     p: "¿Cómo recojo o recibo mis productos?",
@@ -195,7 +195,7 @@ export const FAQ: { p: string; r: string }[] = [
   },
   {
     p: "¿Necesito experiencia en ventas?",
-    r: "No es un requisito. Sí necesitas ganas de aprender a conversar, hacer seguimiento y llevar tus números. Roy te orienta en ese proceso.",
+    r: "No es un requisito. Sí necesitas ganas de aprender a conversar, hacer seguimiento y llevar tus números. Yo te oriento en ese proceso.",
   },
   {
     p: "¿Puedo empezar sin dejar mi trabajo?",
@@ -207,7 +207,7 @@ export const FAQ: { p: string; r: string }[] = [
   },
   {
     p: "¿Tengo que vender?",
-    r: "Comprar con descuento para uso propio es una cosa; querer generar ingresos con los bonos implica que otras personas compren o se afilien contigo. Roy te explica qué corresponde a cada objetivo antes de que decidas.",
+    r: "Comprar con descuento para uso propio es una cosa; querer generar ingresos con los bonos implica que otras personas compren o se afilien contigo. Te explico qué corresponde a cada objetivo antes de que decidas.",
   },
   {
     p: "¿Tengo que comprar todos los meses?",
@@ -215,7 +215,7 @@ export const FAQ: { p: string; r: string }[] = [
   },
   {
     p: "¿Qué comisiones o bonificaciones existen?",
-    r: "Además del descuento en tu compra, hay bonos por metas: Afilia, Liderazgo y Mercadeo, que ves más abajo con sus tablas. Existen otros bonos que Roy te enseña cuando ya estés en el negocio, junto con cómo lograrlos.",
+    r: "Además del descuento en tu compra, hay bonos por metas: Afilia, Liderazgo y Mercadeo, que ves más abajo con sus tablas. Existen otros bonos que te enseño cuando ya estés en el negocio, junto con cómo lograrlos.",
   },
   {
     p: "¿Cuánto puedo ganar?",
@@ -223,15 +223,15 @@ export const FAQ: { p: string; r: string }[] = [
   },
   {
     p: "¿Qué pasa si no vendo?",
-    r: "Los productos que compraste quedan contigo. Qué opciones existen si no los vendes (por ejemplo, devolución) no está confirmado en esta página: pregúntaselo a Roy antes de comprar.",
+    r: "Los productos que compraste quedan contigo. Qué opciones existen si no los vendes (por ejemplo, devolución) no está confirmado en esta página: pregúntamelo antes de comprar.",
   },
   {
     p: "¿Cómo conozco el plan completo?",
-    r: "Escríbele a Roy por WhatsApp y pídele el plan vigente. Léelo con calma y consulta todo lo que no entiendas antes de comprar.",
+    r: "Escríbeme por WhatsApp y te comparto el plan vigente. Léelo con calma y consulta todo lo que no entiendas antes de comprar.",
   },
   {
     p: "¿Cómo me acompaña Roy?",
-    r: "Te explica las modalidades, resuelve tus dudas y te ayuda a ordenar tus números. Es una orientación personal; no es un servicio de Santa Natura ni una garantía de resultados.",
+    r: "Te explico las modalidades, resuelvo tus dudas y te ayudo a ordenar tus números. Es una orientación personal; no es un servicio de Santa Natura ni una garantía de resultados.",
   },
 ];
 

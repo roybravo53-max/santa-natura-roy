@@ -33,7 +33,7 @@ function Tarjeta({ m }: { m: Modalidad }) {
         </div>
       </dl>
       <p className="mod-quien">
-        <strong>Podría servir si:</strong> {m.paraQuien}
+        <strong>Te puede servir si</strong> {m.paraQuien}
       </p>
       <WaButton
         mensaje={WHATSAPP.modalidad(m.nombre)}
@@ -52,9 +52,9 @@ export function Inversion() {
     <section id="modalidades" className="sec sec-cream">
       <div className="wrap">
         <SectionHead
-          kicker="Modalidades de inversión"
-          title="Cuatro formas de comenzar. Ninguna es “la mejor”."
-          lead="La inversión es en productos. La afiliación se activa con una compra de productos. Elige según lo que puedes asumir sin afectar tus gastos del mes."
+          kicker="Tu inversión"
+          title="Elige cómo quieres comenzar"
+          lead="Tu inversión es en productos, y tu afiliación se activa con tu primera compra. No hay una opción “mejor”: la correcta es la que puedes pagar sin tocar tus gastos del mes."
         />
         <div className="modalidades">
           {MODALIDADES.map((m) => (
@@ -63,24 +63,24 @@ export function Inversion() {
         </div>
 
         <div className="nota-inv">
-          <h3>Lee esto antes de elegir</h3>
+          <h3>Antes de elegir, ten presente</h3>
           <ul className="x-list">
             <li>
               La diferencia entre el valor público y tu inversión <strong>no es ganancia en efectivo</strong>: es el ahorro
               al comprar esos productos.
             </li>
-            <li>Un mayor descuento exige una mayor inversión. No significa mayor resultado.</li>
-            <li>“Millonario” es el nombre del pack. No describe un resultado ni garantiza ganancias.</li>
-            <li>Montos, puntos y porcentajes provienen del plan que maneja Roy; él te confirma que sigan vigentes al escribirle.</li>
+            <li>Un mayor descuento exige una mayor inversión. No significa un mayor resultado.</li>
+            <li>“Millonario” es solo el nombre del pack. No describe un resultado ni garantiza ganancias.</li>
+            <li>Los montos, puntos y porcentajes son los del plan vigente. Si algo cambia, te aviso antes de que compres.</li>
           </ul>
-          <p className="pend-title">Todavía por confirmar con Roy:</p>
+          <p className="pend-title">Lo que vemos juntos por WhatsApp antes de que compres:</p>
           <ul className="pend-list">
             {PENDIENTES_PUBLICOS.map((p) => (
               <li key={p}>{p}</li>
             ))}
           </ul>
           <WaButton mensaje={WHATSAPP.messages.modalidades} origen="tabla_general" variante="verde">
-            Quiero comparar las modalidades con Roy
+            Quiero comparar las modalidades
           </WaButton>
         </div>
       </div>

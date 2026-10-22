@@ -19,7 +19,7 @@ export function Productos() {
         <SectionHead
           kicker="Productos"
           title="Un catálogo de productos naturales que puedes conocer y aprender a recomendar."
-          lead="Tres ejemplos del catálogo oficial. No es una tienda: para ver todo el catálogo y los precios vigentes, visita el sitio de Santa Natura."
+          lead="Tres ejemplos del catálogo oficial. Aquí no compras: para ver todo el catálogo y los precios vigentes, visita el sitio de Santa Natura."
         />
         <div className="productos">
           {PRODUCTOS.map((p) => (
@@ -51,7 +51,7 @@ export function Productos() {
           <a href={CATALOGO_URL} target="_blank" rel="noopener noreferrer">
             Ver catálogo completo en santanatura.com.pe
           </a>
-          . Consultado el 22/10/2026.
+          .
         </p>
       </div>
     </section>
@@ -73,10 +73,10 @@ export function Acompanamiento() {
             <li>Te explico las modalidades y qué significa cada monto.</li>
             <li>Te ayudo a ordenar tus gastos para saber cuánto puedes asumir.</li>
             <li>Te muestro cómo conversar con personas sin presionar a nadie.</li>
-            <li>Te digo con claridad lo que todavía no está confirmado.</li>
+            <li>Te digo con claridad qué está garantizado y qué no.</li>
           </ul>
           <p className="aside-note">
-            Soy un orientador independiente. No represento oficialmente a Santa Natura ni garantizo resultados.
+            Esta es mi página personal. No es el sitio oficial de Santa Natura y no garantizo resultados.
           </p>
         </div>
       </div>
@@ -122,10 +122,10 @@ export function CtaFinal() {
           kicker="El siguiente paso"
           title={
             <>
-              Una conversación no te compromete a <em>nada</em>.
+              Dentro de un año puedes seguir igual, o <em>haber empezado hoy</em>.
             </>
           }
-          lead="Escríbeme y te cuento cómo funciona, cuánto implica cada modalidad y qué falta confirmar. Tú decides después."
+          lead="Escríbeme y te cuento cómo funciona y cuánto implica cada pack, y resuelvo tus dudas. Una conversación no te compromete a nada: tú decides después."
         />
         <div className="final-actions">
           <WaButton mensaje={WHATSAPP.messages.afiliarme} origen="cta_final" variante="oro" grande>
@@ -168,7 +168,7 @@ export function Footer() {
             <summary>Aviso de ingresos</summary>
             <p>
               Los resultados dependen de cada persona y no están garantizados. Los montos, descuentos y condiciones que ves
-              aquí son referenciales, los entregó Roy y se confirman con el plan vigente de Santa Natura. Las diferencias
+              aquí son referenciales y pueden cambiar según el plan vigente de Santa Natura. Las diferencias
               entre valor público e inversión son descuentos de compra, no ganancias. Participar implica invertir en
               productos y puede no generar ingresos.
             </p>

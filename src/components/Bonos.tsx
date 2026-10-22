@@ -9,7 +9,7 @@ export function Bonos() {
         <SectionHead
           kicker="Bonos del plan"
           title="Además del descuento, el plan premia el cumplimiento de metas."
-          lead="Tres de los bonos, tal como figuran en el material del plan que maneja Roy. Son porcentajes y montos de referencia: no son ingresos garantizados y dependen de tu rango, tu actividad y las condiciones vigentes."
+          lead="Estos son tres de los bonos del plan. Son porcentajes y montos de referencia, no ingresos garantizados: dependen de tu rango, tu actividad y las condiciones vigentes."
         />
 
         <div className="bono">
@@ -96,13 +96,11 @@ export function Bonos() {
         </div>
 
         <p className="aviso-salud">
-          Existen otros bonos que Roy te enseña cuando ya estés en el negocio, junto con cómo lograrlos. Ninguna de estas
-          cifras es una promesa de ingreso: son las reglas del plan, y cumplirlas depende de ti. PP = puntos de volumen de
-          consumo personal. Cuánto dura cada periodo y qué exige cada rango se confirma con el plan vigente.
+          Existen otros bonos que te enseño cuando ya estés dentro, junto con cómo lograrlos. Ninguna de estas cifras es una promesa de ingreso: son las reglas del plan, y cumplirlas depende de ti. PP = puntos de volumen de consumo personal. Cuánto dura cada periodo y qué exige cada rango te lo detallo por WhatsApp.
         </p>
         <div className="center-cta">
           <WaButton mensaje={WHATSAPP.messages.redes} origen="bonos" variante="verde">
-            Quiero que me expliquen los bonos
+            Quiero conocer cómo funcionan los bonos
           </WaButton>
         </div>
       </div>
