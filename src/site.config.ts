@@ -33,6 +33,14 @@ export const ANALITICA = {
   activa: true,
 };
 
+/** Video de Roy. Pega solo el ID de YouTube (lo que va después de v= en el enlace), o la ruta de un mp4 en /public. */
+export const VIDEO = {
+  youtubeId: "", // PENDIENTE: ej. "dQw4w9WgXcQ"
+  mp4: "",
+  poster: "", // opcional: imagen de portada, ej. "/portada-video.jpg"
+  duracion: "", // opcional: ej. "6 min"
+};
+
 export const SITIO = {
   nombre: "Roy · Camino Santa Natura",
   url: "https://REEMPLAZAR-DOMINIO", // PENDIENTE: dominio final

@@ -10,7 +10,7 @@
   --muted: #475a50;
   --line: #d9d2bd;
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
   --r: 14px;
   --gutter: 20px;
 }
@@ -22,8 +22,8 @@ html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   font-family: var(--font-body);
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.65;
   color: var(--ink);
   background: var(--paper);
   overflow-x: hidden;
@@ -103,6 +103,27 @@ em { font-style: italic; color: var(--g2); }
 /* borde escalonado andino */
 .steps-edge { position: absolute; left: 0; right: 0; bottom: -1px; height: 24px; background: var(--cream);
   clip-path: polygon(0 100%, 0 70%, 6% 70%, 6% 40%, 12% 40%, 12% 70%, 18% 70%, 18% 40%, 24% 40%, 24% 70%, 30% 70%, 30% 40%, 36% 40%, 36% 70%, 42% 70%, 42% 40%, 48% 40%, 48% 70%, 54% 70%, 54% 40%, 60% 40%, 60% 70%, 66% 70%, 66% 40%, 72% 40%, 72% 70%, 78% 70%, 78% 40%, 84% 40%, 84% 70%, 90% 70%, 90% 40%, 96% 40%, 96% 70%, 100% 70%, 100% 100%); }
+
+/* Hero en formato página de video */
+.vsl { background: var(--paper); padding: 8px 0 48px; text-align: center; }
+.vsl-wrap { max-width: 860px; }
+.vsl-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--g1); color: var(--paper); font: 800 11.5px var(--font-body); letter-spacing: .08em; text-transform: uppercase; padding: 9px 16px; border-radius: 999px; margin: 8px 0 20px; box-shadow: 0 6px 16px rgba(11,93,59,.25); }
+.vsl h1 { font-family: var(--font-body); font-weight: 800; font-size: clamp(1.7rem, 7vw, 3rem); line-height: 1.14; letter-spacing: -.02em; color: var(--ink); }
+.vsl h1 em { font-style: normal; color: var(--g1); background: linear-gradient(transparent 62%, rgba(201,162,39,.38) 62%); padding: 0 2px; }
+.vsl-sub { font-size: 1.02rem; color: var(--muted); margin: 18px auto 24px; max-width: 30em; font-weight: 500; }
+.video-box { position: relative; aspect-ratio: 16 / 9; width: 100%; border-radius: 16px; overflow: hidden; background: var(--g-deep); box-shadow: 0 18px 44px rgba(8,68,44,.3); }
+.video-box iframe, .video-box video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-facade { position: absolute; inset: 0; width: 100%; border: 0; padding: 0; cursor: pointer; background-size: cover; background-position: center; background-color: var(--g1); display: grid; place-items: center; align-content: center; gap: 14px; color: var(--paper); }
+.video-facade::before { content: ""; position: absolute; inset: 0; background: linear-gradient(rgba(8,68,44,.25), rgba(8,68,44,.55)); }
+.play { position: relative; width: 76px; height: 76px; border-radius: 50%; background: var(--gold); color: var(--ink); display: grid; place-items: center; transition: transform .2s; }
+.video-facade:hover .play { transform: scale(1.08); }
+.video-hint { position: relative; font-weight: 700; font-size: 15px; }
+.video-marcador { position: absolute; inset: 0; border-radius: 0; }
+.video-meta { font-size: 14px; color: var(--muted); margin: 12px 0 0; }
+.vsl-cta { margin-top: 24px; display: grid; gap: 14px; justify-items: center; }
+.vsl-cta .btn { width: 100%; max-width: 460px; }
+.vsl-leer { color: var(--g1); font-weight: 600; font-size: 15px; min-height: 44px; display: inline-flex; align-items: center; }
+.hero-apoyo { font-size: 14.5px; color: var(--muted); margin: 0; max-width: 28em; }
 
 /* Secciones */
 .sec { padding: 64px 0; position: relative; }
