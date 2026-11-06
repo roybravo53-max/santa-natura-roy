@@ -35,7 +35,7 @@ export const ANALITICA = {
 
 /** Video de Roy. Pega solo el ID de YouTube (lo que va después de v= en el enlace), o la ruta de un mp4 en /public. */
 export const VIDEO = {
-  youtubeId: "", // PENDIENTE: ej. "dQw4w9WgXcQ"
+  youtubeId: "IUxbkaaXq4I",
   mp4: "",
   poster: "", // opcional: imagen de portada, ej. "/portada-video.jpg"
   duracion: "", // opcional: ej. "6 min"
